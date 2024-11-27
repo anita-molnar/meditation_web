@@ -147,11 +147,12 @@
       <section>
         <h2 class="text-center mb-5 mt-5" id="chakra">Chakra</h2>
 
+       <div class="container">
         <div class="row g-4 bg-light">
           <!-- Card 1 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
-              <img src="Images/chakramain.png" class="card-img-top" alt="..." />
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
+              <img src="Images/chakramain.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-title">The 7th Chakras</h5>
                 <p class="card-text text-sm-centre">
@@ -164,8 +165,8 @@
           </div>
 
           <!-- card 2 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img
                 src="./Images/rootchakra.jpg"
                 class="card-img-top"
@@ -176,15 +177,15 @@
                 <p class="card-text text-sm-centre">
                   Represents our foundation.When is open, we feel confident in
                   our ability to withstand challenges and stand on our own two
-                  feet. When it’s blocked, we feel threatened. Stone: Hematite
+                  feet. When it's blocked, we feel threatened. Stone: Hematite
                 </p>
               </div>
             </div>
           </div>
 
           <!-- card 3 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center">
               <img
                 src="./Images/tigerseye.jpg"
                 class="card-img-top"
@@ -203,8 +204,8 @@
           </div>
 
           <!-- card 4 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img src="./Images/amber.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Solar chakra</h5>
@@ -217,8 +218,8 @@
           </div>
 
           <!-- card 5 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img src="./Images/heart.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Heart Chakra</h5>
@@ -233,8 +234,8 @@
           </div>
 
           <!-- card 6 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img
                 src="./Images/aquamarine.jpg"
                 class="card-img-top"
@@ -253,8 +254,8 @@
           </div>
 
           <!-- card 7 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img src="./Images/thirdeye.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Third eye's chakra</h5>
@@ -267,8 +268,8 @@
           </div>
 
           <!-- card 8 -->
-          <div class="col-md-3">
-            <div class="card text-center" style="width: 18rem">
+          <div class="col-12 col-md-3">
+            <div class="card text-center" >
               <img
                 src="./Images/clearquartz.jpg"
                 class="card-img-top"
@@ -283,6 +284,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <!-- end chakra -->
@@ -401,7 +403,7 @@
           <!-- Phone Number -->
           <div class="mb-3">
             <label for="phone" class="form-label">Phone Number (Optional)</label>
-            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="^\+?[0-9\s\-]+$">
           </div>
           
           <!-- Inquiry Purpose -->
@@ -436,7 +438,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="marketing_consent" name="marketing_consent">
               <label class="form-check-label" for="marketing_consent">
-                I would like to opt out to receive updates and marketing emails.
+                I would like to receive updates and marketing emails.
               </label>
             </div>
           </fieldset>
@@ -448,6 +450,48 @@
         </div>
         </form>
       </div>
+      <!-- END contact us -->
+
+     <!-- Footer -->
+     <footer class="bg-danger-subtle text-secondary text-dark py-4 mb-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- About Section -->
+          <div class="col-md-4 mb-3">
+            <h5>About Us</h5>
+            <p>
+              <strong>Vibe Waves</strong> is dedicated to helping you achieve peace of mind and balance through meditation and mindfulness practices.
+            </p>
+          </div>
+          <!-- Links Section -->
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Meditation Guides</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Section -->
+          <div class="col-md-4 mb-3">
+            <h5>Contact Us</h5>
+            <p>Email: <a href="mailto:info@vibewaves.com" class="text-dark text-decoration-none">info@vibewaves.com</a></p>
+            <p>Phone: <a href="tel:+44 xxxxxxxxxx" class="text-dark text-decoration-none">+44 xxxxxxxxx</a></p>
+           
+           
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="mb-0">&copy; 2024 Vibe Waves. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+    
+    
+    
+
 
 
     </main>
