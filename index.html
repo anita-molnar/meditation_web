@@ -19,59 +19,37 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle fixed-top shadow-sm">
       <div class="container-fluid">
-        <img src="./Images/navbarlogo.jpg" width="40px" alt="navbarlogo" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./Images/navbarlogo.jpg" alt="Logo" width="40" class="me-2">
+          <span>Vibe Waves</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="nav justify-content-end ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#chakra">Chakra</a>
-            </li>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Meditation links
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Soundscapes</a></li>
-                <li><a class="dropdown-item" href="#">Drum melodies</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Sound of Tibet</a>
-                </li>
+              <a class="nav-link dropdown-toggle" href="#" id="meditationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meditation</a>
+              <ul class="dropdown-menu" aria-labelledby="meditationDropdown">
+                <li><a class="dropdown-item" href="#soundscapes">Soundscapes</a></li>
+                <li><a class="dropdown-item" href="#chakra-guide">Chakra Guide</a></li>
+                <li><a class="dropdown-item" href="#mindfulness">Mindfulness</a></li>
               </ul>
             </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#faq">FaQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactus">Contact Us</a>
+              <a class="btn btn-primary ms-3" href="#join-now">Join Now</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- END navbar -->
 
     <!-- Hero Section -->
 <section class="hero-section">
@@ -85,7 +63,7 @@
         <p class="hero-description mt-3">
           Join us on a journey to relaxation, mindfulness, and personal growth. Unlock the benefits of meditation today.
         </p>
-        <a href="#learn-more" class="btn btn-primary mt-4">Get Started</a>
+        <a href="#learn-more" class="btn btn-primary mt-4 mb-2">Get Started</a>
       </div>
       <!-- Left Side: Image -->
       <div class="col-md-6 text-center">
@@ -94,69 +72,108 @@
     </div>
   </div>
 </section>
+<!-- END hero section -->
 
- 
+ <!-- About us -->
+<main class="container-fluid py-3" id="aboutus" name="aboutus">
+  <!-- Hero Header -->
+  <div class="about-header text-center text-dark py-5" style="background-image: url('./Images/aboutusheader.jpg'); background-size: cover; background-position: center;">
+    <h1>About Us</h1>
+    <p class="mt-3">
+      Discover the journey to mindfulness and tranquility with <span class="fw-bold">Vibe Waves Meditation</span>
+    </p>
+  </div>
 
-    <!-- About us -->
-    <main class="container mt-5" id="aboutus">
-      <h2 class="text-center mb-5">About Us</h2>
-      <!-- Row 1: Text on Left, Image on Right -->
-
-      <div class="row align-items-center mb-4">
-        <div class="col-md-6 order-md-2">
-          <img
-            src="Images/homebackground.jpg"
-            class="img-fluid rounded"
-            alt="Section 2 Image"
-          />
-        </div>
-        <div class="col-md-6 order-md-1">
-          <h3>Our Mission</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
-            ultricies orci. Integer at erat vel massa volutpat congue.
-          </p>
-          <a href="#" class="btn btn-primary">Discover More</a>
-        </div>
+  <!-- Section 1: Our Mission -->
+<div class="container py-5">
+  <section class="row align-items-center my-5">
+    <div class="col-md-6">
+      <div class="ratio ratio-4x3">
+        <img src="Images/home1.jpg" class="img-fluid rounded" alt="Our Mission">
       </div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="fw-bold text-primary">Our Mission</h3>
+      <p>
+        At Vibe Waves, our mission is to guide individuals toward a peaceful and mindful life. Through meditation and mindfulness, we help people reconnect with themselves and discover inner harmony.
+      </p>
+      
+    </div>
+  </section>
 
-      <!-- Row 2: Image on Left, Text on Right -->
-      <div class="row align-items-center mb-4">
-        <div class="col-md-6">
-          <img
-            src="./Images/home2.jpg"
-            class="img-fluid rounded"
-            alt="Section 3 Image"
-          />
-        </div>
-        <div class="col-md-6">
-          <h3>Why Choose Us?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
-            ultricies orci. Integer at erat vel massa volutpat congue.
-          </p>
-          <a href="#" class="btn btn-primary">Read More</a>
-        </div>
+  <!-- Section 2: Why Choose Us -->
+  <section class="row align-items-center my-5">
+    <div class="col-md-6 order-md-2">
+      <div class="ratio ratio-4x3">
+        <img src="./Images/home2.jpg" class="img-fluid rounded" alt="Why Choose Us">
       </div>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h3 class="fw-bold text-primary">Why Choose Us?</h3>
+      <p>
+        With a blend of ancient wisdom and modern techniques, we provide personalized meditation experiences. Whether you’re seeking relaxation or spiritual growth, Vibe Waves is your trusted partner.
+      </p>
+      
+    </div>
+  </section>
 
-      <!-- Row 3: Text on Left, Image on Right -->
-      <div class="row align-items-center">
-        <div class="col-md-6 order-md-2">
-          <img
-            src="./Images/home3.jpg"
-            class="img-fluid rounded"
-            alt="Section 4 Image"
-          />
-        </div>
-        <div class="col-md-6 order-md-1">
-          <h3>Get in Touch</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
-            ultricies orci. Integer at erat vel massa volutpat congue.
-          </p>
-          <a href="#" class="btn btn-primary">Contact Us</a>
-        </div>
+  <!-- Section 3: Guided Meditation -->
+  <section class="row align-items-center my-5">
+    <div class="col-md-6">
+      <div class="ratio ratio-4x3">
+        <img src="./Images/home3.jpg" class="img-fluid rounded" alt="Guided Meditation">
       </div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="fw-bold text-primary">Guided Meditation</h3>
+      <p>
+        Explore our guided meditation sessions crafted to help you achieve mindfulness. From beginners to seasoned meditators, we have something for everyone.
+      </p>
+  
+    </div>
+  </div>
+  </section>
+</main>
+<!-- END about us -->
+
+    
+      <!-- Testimonials -->
+      <section class="testimonials py-4 bg-light mt-4">
+        <div class="container">
+          <h3 class="text-center mb-4 text-dark">What Our Clients Says</h3>
+          <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+              <div class="testimonial-item p-4 bg-white rounded shadow">
+                <blockquote class="mb-3 text-muted">
+                  "Meditation with Vibe Waves has transformed my life. Highly recommend!A must place to visit!"
+                </blockquote>
+                <p class="text-end fw-bold">- Jane Doe</p>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+              <div class="testimonial-item p-4 bg-white rounded shadow">
+                <blockquote class="mb-3 text-muted">
+                  "A wonderful resource for stress relief and mindfulness. I feel more centered every day."
+                </blockquote>
+                <p class="text-end fw-bold">- John Smith</p>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+              <div class="testimonial-item p-4 bg-white rounded shadow">
+                <blockquote class="mb-3 text-muted">
+                  "The guided meditations are amazing! They helped me find peace during a stressful time."
+                </blockquote>
+                <p class="text-end fw-bold">- Emily Taylor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+         <!-- testimonial end -->
+      
 
       <!-- chakra -->
       <section>
@@ -305,8 +322,10 @@
       <!-- end chakra -->
 
       <!-- FAQ -->
+       <div class="container py-3">
       <div class="accordion mt-5 mb-5 bg-light" id="faq">
         <h2 class="text-center mb-5 mt-5">FAQ</h2>
+        <!-- Q1 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -323,18 +342,18 @@
           <div
             id="collapseOne"
             class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#faq"
           >
             <div class="accordion-body">
-              <strong> Meditation </strong>
-              is a practice that involves focusing the mind to achieve mental
-              clarity and emotional calmness. It can help reduce stress, improve
-              focus, enhance emotional well-being, and promote a deeper
-              connection to yourself.
+            <strong>Meditation</strong> is the practice of training your mind to focus and
+             redirect your thoughts. It can help reduce stress, improve concentration, enhance 
+             emotional health, and promote self-awareness. Regular practice fosters calmness and
+              clarity in everyday life.
+
             </div>
           </div>
         </div>
-
+          <!-- Q2 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -361,6 +380,7 @@
             </div>
           </div>
         </div>
+        <!-- Q3 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -387,7 +407,82 @@
             </div>
           </div>
         </div>
+         <!-- Q4-->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFour"
+          aria-expanded="false"
+          aria-controls="collapseFour"
+        >
+          Can anyone practice meditation, regardless of age or experience?
+        </button>
+      </h2>
+      <div
+        id="collapseFour"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faq"
+      >
+        <div class="accordion-body">
+          Absolutely! Meditation is a practice for people of all ages and backgrounds. It requires no prior experience, and its techniques can be adapted to suit individual needs and preferences.
+        </div>
       </div>
+    </div>
+
+    <!-- Q5-->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFive"
+          aria-expanded="false"
+          aria-controls="collapseFive"
+        >
+          What types of meditation are available, and how do I choose one?
+        </button>
+      </h2>
+      <div
+        id="collapseFive"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faq"
+      >
+        <div class="accordion-body">
+          There are many types of meditation, including mindfulness, guided, transcendental, and loving-kindness meditation. Experiment with different styles to find what resonates with your goals and personality.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseSix"
+          aria-expanded="false"
+          aria-controls="collapseSix"
+        >
+          How long does it take to see the benefits of meditation?
+        </button>
+      </h2>
+      <div
+        id="collapseSix"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faq"
+      >
+        <div class="accordion-body">
+          The benefits of meditation vary from person to person. Some notice a sense of calm and clarity immediately after their first session, while others see changes in focus, mood, or stress levels after weeks or months of consistent practice.
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
       <!-- END FAQ -->
 
 
@@ -468,7 +563,7 @@
       <!-- END contact us -->
 
      <!-- Footer -->
-     <footer class="bg-danger-subtle text-secondary text-dark py-4 mb-5">
+     <footer class="bg-primary-subtle text-secondary text-dark py-4 mb-5">
       <div class="container">
         <div class="row text-center text-md-start">
           <!-- About Section -->

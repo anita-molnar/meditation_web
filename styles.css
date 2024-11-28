@@ -1,0 +1,5 @@
+/* Add top padding to the body or main content */
+body {
+    padding-top: 70px; /* Adjust based on navbar height */
+  }
+  
