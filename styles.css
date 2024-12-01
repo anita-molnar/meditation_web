@@ -15,7 +15,7 @@ body {
     flex-direction: column;       /* Aligns text vertically */
     justify-content: center;      /* Vertically centers text */
     align-items: center;          /* Horizontally centers text */
-    color: #fff;                  /* Optional: Sets text color for readability */
+    
     
   }
   
@@ -28,5 +28,21 @@ body {
     border-radius: 6px;    /* Optional: rounded corners for a smoother look */
   }
 
-  
+/* testimonial images */
+.rounded-image {
+  width: 100px; /* Fixed width for the circle */
+  height: 100px; /* Fixed height for the circle */
+  overflow: hidden; /* Ensures anything outside the circle is hidden */
+  border-radius: 50%; /* Makes it a perfect circle */
+  border: 3px solid #f8f9fa; /* Optional: Adds a border for a clean look */
+  display: flex; /* Centers the image within the circle */
+  justify-content: center;
+  align-items: center;
+}
+.rounded-image img {
+  width: 100%; /* Ensures the image fits the container width */
+  height: 100%; /* Ensures the image fits the container height */
+  object-fit: cover; /* Maintains aspect ratio and covers the circle */
+}
+
   
