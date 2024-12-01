@@ -1,5 +1,32 @@
 /* Add top padding to the body or main content */
 body {
-    padding-top: 70px; /* Adjust based on navbar height */
+    padding-top: 50px; /* Adjust based on navbar height */
   }
+  
+
+  /* about us background image  */ 
+  #aboutus .about-header {
+    background-image: url('./Images/aboutusheader.jpg');
+    background-size: cover;       /* Ensures the image covers the entire area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 150px;            /* Ensures a minimum height for visibility */
+    display: flex;                /* Enables flexbox for centering content */
+    flex-direction: column;       /* Aligns text vertically */
+    justify-content: center;      /* Vertically centers text */
+    align-items: center;          /* Horizontally centers text */
+    color: #fff;                  /* Optional: Sets text color for readability */
+    
+  }
+  
+
+/* chakra guide cards */
+  .fixed-size {
+    width: 100%;           /* Ensures the image stretches to the card width */
+    height: 300px;         /* Set a fixed height */
+    object-fit: cover;     /* Ensures the image scales and crops nicely */
+    border-radius: 6px;    /* Optional: rounded corners for a smoother look */
+  }
+
+  
   
