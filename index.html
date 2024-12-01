@@ -35,7 +35,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="meditationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meditation</a>
               <ul class="dropdown-menu" aria-labelledby="meditationDropdown">
-                <li><a class="dropdown-item" href="#soundscapes">Soundscapes</a></li>
+                <li><a class="dropdown-item" href="music-list.html">Soundscapes</a></li>
                 <li><a class="dropdown-item" href="chakra-guide.html">Chakra Guide</a></li>
                
               </ul>
@@ -43,13 +43,68 @@
             <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
             <li class="nav-item">
-              <a class="btn btn-primary ms-3" href="#join-now">Join Now</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinUsModal">
+                Join Us
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END navbar -->
+
+    <!-- Modal-->
+<div class="modal fade" id="joinUsModal" tabindex="-1" aria-labelledby="joinUsModalLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinUsModalLabel">Join Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formspree.io/f/mpwzlywd"method="POST">
+          <!-- Full Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <!-- Membership Type -->
+          <div class="mb-3">
+            <label for="membership" class="form-label">Membership Type</label>
+            <select class="form-select" id="membership" required>
+              <option value="" disabled selected>Select your membership</option>
+              <option value="free">Free</option>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div>
+
+          <!-- Comments/Questions -->
+          <div class="mb-3">
+            <label for="comments" class="form-label">Comments/Questions</label>
+            <textarea class="form-control" id="comments" rows="3" placeholder="Any comments or questions?"></textarea>
+          </div>
+
+          <!-- Terms and Conditions -->
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Join Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Hero Section -->
 <section class="hero-section">
@@ -468,7 +523,7 @@
           <div class="col-md-4 mb-3">
             <h5>Contact Us</h5>
             <p>Email: <a href="mailto:info@vibewaves.com" class="text-dark text-decoration-none">info@vibewaves.com</a></p>
-            <p>Phone: <a href="tel:+44 xxxxxxxxxx" class="text-dark text-decoration-none">+44 xxxxxxxxx</a></p>
+            <p>Phone: <a href="tel:+44 xxxxxxxxxx" class="text-dark text-decoration-none">+44 7979796578</a></p>
            
            
           </div>
