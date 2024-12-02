@@ -10,11 +10,13 @@ body {
     background-size: cover;       /* Ensures the image covers the entire area */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 150px;            /* Ensures a minimum height for visibility */
+    min-height: 250px;            /* Ensures a minimum height for visibility */
     display: flex;                /* Enables flexbox for centering content */
     flex-direction: column;       /* Aligns text vertically */
     justify-content: center;      /* Vertically centers text */
     align-items: center;          /* Horizontally centers text */
+    padding: 20px;                /* Adds padding for spacing */
+    border-radius: 0;             /* Ensures edges match the container */
     
     
   }
